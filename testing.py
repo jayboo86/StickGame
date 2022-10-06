@@ -82,6 +82,13 @@ nameReturn(typingPrint, clearScreen, username)
 
 # Ask the player what day it is
 dOfWeek = typingInput("Say, would you happen to know what day of the week it is?\nI seem to have had some memory loss.\n")
+print('\n')
+print("1. Sunday\n")
+print("2. Monday\n")
+print("3. Tuesday\n")
+print("4. Wednesday\n")
+print("5. Thursday\n")
+
 
 clearScreen()
 dayReturn(typingPrint, dOfWeek)
