@@ -1,0 +1,3 @@
+Quick and dirty list of things to look at doing:
+1. Break out the days of the week to their own functions.
+2. Research adding prompt to typingInput
