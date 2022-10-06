@@ -1,3 +1,4 @@
+from this import d
 import time,os,sys
 
 # function to delay text on screen for output to player
@@ -61,6 +62,9 @@ def dayReturn(typingPrint, dOfWeek):
     elif dOfWeek == ('Wednesday'):
         typingPrint(dOfWeek)
         typingPrint("Well... ")
+
+    elif dOfWeek == ('Thursday')
+        typingPrint(dOfWeek))
 
     # typingPrint("No way! It is ")
     # typingPrint(dOfWeek)
