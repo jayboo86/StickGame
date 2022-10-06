@@ -63,8 +63,8 @@ def dayReturn(typingPrint, dOfWeek):
         typingPrint(dOfWeek)
         typingPrint("Well... ")
 
-    elif dOfWeek == ('Thursday')
-        typingPrint(dOfWeek))
+    elif dOfWeek == ('Thursday'):
+        typingPrint(dOfWeek)
 
     # typingPrint("No way! It is ")
     # typingPrint(dOfWeek)
