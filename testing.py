@@ -26,7 +26,7 @@ def introGame(typingPrint, clearScreen):
     time.sleep(1)
     typingPrint('.........\n')
     time.sleep(1)
-    typingPrint('...........\n')
+    typingPrint('.........\n')
     time.sleep(1)
     print('')
     print('')
@@ -40,35 +40,47 @@ def nameReturn(typingPrint, clearScreen, username):
     typingPrint("Oh my! ")
     typingPrint(username) 
     typingPrint("! You say?\n")
-    typingPrint("What a fantastic name!")
-    time.sleep(5)
+    typingPrint("What a fantastic name!\n")
+    time.sleep(3)
+    typingPrint("...")
     clearScreen()
 
 # Return the day of the week
 def dayReturn(typingPrint, dOfWeek):
-    if dOfWeek == ('Sunday'):
+    if dOfWeek.lower() == ('sunday'):
         typingPrint("Oh good! I am glad to know it is only ")
         typingPrint(dOfWeek)
         typingPrint(". I still have time!!")
 
-    elif dOfWeek == ('Monday'):
+    elif dOfWeek.lower() == ('monday'):
         typingPrint("Well, I can handle it being ")
         typingPrint(dOfWeek)
         typingPrint(". I can still make it.")
     
-    elif dOfWeek == ('Tuesday'):
+    elif dOfWeek.lower() == ('tuesday'):
         typingPrint("Hmmm.. That is not leaving me much time..")
 
-    elif dOfWeek == ('Wednesday'):
+    elif dOfWeek.lower() == ('wednesday'):
         typingPrint(dOfWeek)
         typingPrint("Well... ")
 
-    elif dOfWeek == ('Thursday'):
+    elif dOfWeek.lower() == ('thursday'):
         typingPrint(dOfWeek)
 
+    elif dOfWeek.lower() == ('friday'):
+        typingPrint(dOfWeek)
+
+    elif dOfWeek.lower() == ('saturday'):
+        typingPrint(dOfWeek)
+
+    
     # typingPrint("No way! It is ")
     # typingPrint(dOfWeek)
     # typingPrint(" already?!")
+
+
+
+
 
 introGame(typingPrint, clearScreen)
 clearScreen()
