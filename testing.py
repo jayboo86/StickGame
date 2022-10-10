@@ -24,14 +24,14 @@ def introGame(typingPrint, clearScreen):
     clearScreen()
     typingPrint('HELLO WORLD!\n')
     time.sleep(1)
-    typingPrint('.........\n')
+    print('.........\n')
     time.sleep(1)
-    typingPrint('.........\n')
+    print('.........\n')
     time.sleep(1)
     print('')
     print('')
     time.sleep(1)
-    typingPrint('Brought to you by........ Your Dad!\n')
+    print('Brought to you by........ Your Dad!\n')
     time.sleep(1)
     input('Press Enter to continue.')
 
@@ -73,7 +73,22 @@ def dayReturn(typingPrint, dOfWeek):
     elif dOfWeek.lower() == ('saturday'):
         typingPrint(dOfWeek)
 
-    
+def sunday(typingPrint, typingInput, dOfWeek, username):
+    typingPrint("Oh I am very glad to learn it is only Sunday, ")
+    typingPrint(username)
+    typingPrint(".\n")
+
+
+
+def dayOfWeek(typingInput):
+    dOfWeek = typingInput("Say, would you happen to know what day of the week it is?\nI seem to have had some memory loss.\n")
+    if dOfWeek.lower() == "sunday":
+        sunday()
+    elif dOfWeek.lower() == "monday":
+        monday()
+    elif dOfWeek.lower() == "tuesday":
+        tuesday()
+
     # typingPrint("No way! It is ")
     # typingPrint(dOfWeek)
     # typingPrint(" already?!")
@@ -89,16 +104,19 @@ typingPrint('Oh! Hello, I did not see you there. \n')
 time.sleep(1)
 
 # Ask the player their name 
-username = typingInput("My name is Stick. \nWhat is your name? ")
+typingPrint("My name is Stick. \n")
+typingPrint("What is your name?")
+username = input("\n: ")
 nameReturn(typingPrint, clearScreen, username)
 
 # Ask the player what day it is
-dOfWeek = typingPrint("Say, would you happen to know what day of the week it is?\nI seem to have had some memory loss.\n")
-print("....")
-input()
-clearScreen()
-print("HINT: Sunday Monday Tuesday Wednesday Thursday Friday Saturday\n")
-typingInput("The day of the week is what again? ")
+# dOfWeek = typingPrint("Say, would you happen to know what day of the week it is?\nI seem to have had some memory loss.\n")
+# print("....")
+# input()
+# clearScreen()
+# print("HINT: Sunday Monday Tuesday Wednesday Thursday Friday Saturday\n")
+# typingInput("The day of the week is what again? ")
+
 
 
 
