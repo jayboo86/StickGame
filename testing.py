@@ -89,17 +89,17 @@ typingPrint('Oh! Hello, I did not see you there. \n')
 time.sleep(1)
 
 # Ask the player their name 
-username = typingInput("My name is Stick. What is your name?\n")
+username = typingInput("My name is Stick. \nWhat is your name? ")
 nameReturn(typingPrint, clearScreen, username)
 
 # Ask the player what day it is
-dOfWeek = typingInput("Say, would you happen to know what day of the week it is?\nI seem to have had some memory loss.\n")
-print('\n')
-print("1. Sunday\n")
-print("2. Monday\n")
-print("3. Tuesday\n")
-print("4. Wednesday\n")
-print("5. Thursday\n")
+dOfWeek = typingPrint("Say, would you happen to know what day of the week it is?\nI seem to have had some memory loss.\n")
+print("....")
+input()
+clearScreen()
+print("HINT: Sunday Monday Tuesday Wednesday Thursday Friday Saturday\n")
+typingInput("The day of the week is what again? ")
+
 
 
 clearScreen()
